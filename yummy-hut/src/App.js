@@ -1,14 +1,20 @@
 // import logo from './logo.svg';
 // import './App.css';
+import {Fragment} from 'react'
+import Cart from './Components/Cart/Cart';
+
 import Header from './Components/Layout/Header';
 import Meals from './Components/Meals/Meals';
 
 function App() {
   return (
-    <div className="App">
+   <Fragment>
+    <Cart/>
       <Header/>
+      <main>
      <Meals/>
-    </div>
+     </main>
+     </Fragment>
   );
 }
 
